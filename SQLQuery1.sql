@@ -6,3 +6,6 @@ create table AddressBook(First_Name varchar(100),Last_Name varchar(100),States v
 insert into AddressBook(First_name,Last_name,States,City,Zip,Home_address,Phone_No,Email) values ('Raja','Ravi','TamilNadu','Madurai','600001','India',6379386500,'rajjr@gmail.com');
 --UC4-Ability to edit existing person contact
 update AddressBook set City='Chennai' where First_Name='Raja';
+--UC5-Ability to Delete the Person 
+delete from AddressBook where First_Name='Raja';
+
