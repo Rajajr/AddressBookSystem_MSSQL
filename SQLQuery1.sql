@@ -18,3 +18,9 @@ delete from AddressBook where First_Name='Raja';
 
 --UC6-Ability To Retrive Person By State or Name
 select *from AddressBook where First_Name='sara' and States='Kerala';
+
+--UC7-Ability To Understand The Size Of AddressBook
+select States, City, count(States) as 'Number Of States', count (City) as  'Number Of City' from AddressBook
+group by States,City;
+
+
