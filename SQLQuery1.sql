@@ -20,6 +20,10 @@ delete from AddressBook where First_Name='Raja';
 select *from AddressBook where First_Name='sara' and States='Kerala';
 
 --UC7-Ability To Understand The Size Of AddressBook
-select count (City)from AddressBook where City='Kochi';
-select count (States)from AddressBook where States='Kerala';
+select count (City)from AddressBook where City='Chennai';
+select count (States)from AddressBook where States='TamilNadu';
 
+--UC8-Retrive Entries Sorted Alphabetically By Persons Name For A Given City
+select *from AddressBook
+where City='Chennai' 
+order by First_Name 
