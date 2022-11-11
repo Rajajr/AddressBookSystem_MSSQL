@@ -27,3 +27,9 @@ select count (States)from AddressBook where States='TamilNadu';
 select *from AddressBook
 where City='Chennai' 
 order by First_Name 
+
+--UC9-Alter The Address Book database With Name and Type
+alter table AddressBook Add Name varchar(100), Type Varchar(100)
+
+update AddressBook set Name='Friends Group', Type='Friend' where First_Name='Raja';
+update AddressBook set Name='Family Group', Type='Family ' where First_Name='sara';
